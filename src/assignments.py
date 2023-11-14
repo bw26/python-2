@@ -1,3 +1,4 @@
+from student.WordCounter import *
 # define your methods here.
 # ex1() - ex10()
 def ex1():
@@ -33,10 +34,21 @@ def ex3():
     return
 
 def ex4():
-    
-    return
+    people_list = [
+    {'name': 'alice',   'age': 20, 'weight': 160, 'sex': 'male',   'id': 1},
+    {'name': 'bob',     'age': 10, 'weight': 130, 'sex': 'male',   'id': 2},
+    {'name': 'charlie', 'age': 15, 'weight': 120, 'sex': 'female', 'id': 3},]
+    def get_people(lst):
+        return [i['name'] for i in lst if i['age'] >= 15]
+    print(get_people(people_list))
 
 def ex5():
+    sentence = "This is a test of the emergency broadcast system"
+    word_counter = WordCounter(sentence)
+    word_counter.count_words()
+    print(word_counter.get_word_count())    # Returns the number of all the words.
+    print(word_counter.get_shortest_word()) # Returns the length of the shortest word.
+    print(word_counter.get_longest_word())  # Returns the length of the longest word.
     
     return
 
@@ -63,9 +75,9 @@ def ex10():
 def main():
     # ex1()
     # ex2()
-    ex3()
+    # ex3()
     # ex4()
-    # ex5()
+    ex5()
     # ex6()
     # ex7()
     # ex8()
