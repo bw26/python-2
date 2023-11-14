@@ -11,7 +11,14 @@ def ex1():
     print(people_list)
 
 def ex2():
-    return
+    people_list = [
+    {'name': 'alice',   'age': 20, 'weight': 160, 'sex': 'male',   'id': 1},
+    {'name': 'bob',     'age': 10, 'weight': 130, 'sex': 'male',   'id': 2},
+    {'name': 'charlie', 'age': 15, 'weight': 120, 'sex': 'female', 'id': 3},]
+    def filter_males(people):
+        return list(filter(lambda p: p['sex'] == "male", people_list))
+    filtered_list = filter_males(people_list)
+    print(filtered_list)
 
 def ex3():
     
@@ -46,8 +53,8 @@ def ex10():
     return
 
 def main():
-    ex1()
-    # ex2()
+    # ex1()
+    ex2()
     # ex3()
     # ex4()
     # ex5()
