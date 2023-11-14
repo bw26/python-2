@@ -1,4 +1,6 @@
 from student.WordCounter import *
+from student.TaxMan import *
+from student.Calculator import *
 # define your methods here.
 # ex1() - ex10()
 def ex1():
@@ -53,11 +55,31 @@ def ex5():
     return
 
 def ex6():
-    
-    return
+    items = [
+        {"id": 1, "desc": "clock", "price": 1.00},
+        {"id": 2, "desc": "socks", "price": 2.00},
+        {"id": 3, "desc": "razor", "price": 3.00},
+    ]
+    tm = TaxMan(items, "10%")
+    tm.calc_total()
+    print(tm.get_total())
 
 def ex7():
-    
+    calculator1 = Calculator(4, 3)
+    calculator1.add()
+    print(calculator1.get_result())
+
+    calculator2 = Calculator(4, 3)
+    calculator2.sub()
+    print(calculator2.get_result())
+
+    calculator3 = Calculator(2, 3)
+    calculator3.mul()
+    print(calculator3.get_result())
+
+    calculator4 = Calculator(8, 2)
+    calculator4.div()
+    print(calculator4.get_result())
     return
 
 def ex8():
@@ -77,9 +99,9 @@ def main():
     # ex2()
     # ex3()
     # ex4()
-    ex5()
+    # ex5()
     # ex6()
-    # ex7()
+    ex7()
     # ex8()
     # ex9()
     # ex10()
