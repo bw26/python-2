@@ -21,6 +21,14 @@ def ex2():
     print(filtered_list)
 
 def ex3():
+    people_list = [
+        {'id': 2, 'name': 'bob',     'weight_kg': 90, 'height_meters': 1.7},
+        {'id': 3, 'name': 'charlie', 'weight_kg': 80, 'height_meters': 1.8},]
+    def calc_bmi(lst):
+        list(map(lambda p: p.update({'bmi': (round(p['weight_kg'] / p['height_meters'] ** 2, 1))}), lst))
+        return lst
+    new_people_list = calc_bmi(people_list)
+    print(new_people_list)
     
     return
 
@@ -54,8 +62,8 @@ def ex10():
 
 def main():
     # ex1()
-    ex2()
-    # ex3()
+    # ex2()
+    ex3()
     # ex4()
     # ex5()
     # ex6()
