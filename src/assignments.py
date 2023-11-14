@@ -113,3 +113,20 @@ def ex10():
     for i in data:
         d.append(Invoice(i))
     pprint(d)
+    return
+
+def main():
+    # ex1()
+    # ex2()
+    # ex3()
+    # ex4()
+    # ex5()
+    # ex6()
+    # ex7()
+    # ex8()
+    #ex9()
+    ex10()
+    return
+
+if __name__ == "__main__":
+    main()
