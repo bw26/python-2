@@ -1,10 +1,10 @@
-from student.WordCounter import *
-from student.TaxMan import *
-from student.Calculator import *
-from student.CarCollector import *
-from student.Fighter import *
-from student.Dwarf import *
-from student.Invoice import *
+from src.student.WordCounter import *
+from src.student.TaxMan import *
+from src.student.Calculator import *
+from src.student.CarCollector import *
+from src.student.Fighter import *
+from src.student.Dwarf import *
+from src.student.Invoice import *
 from pprint import *
 
 # define your methods here.
@@ -114,19 +114,3 @@ def ex10():
         d.append(Invoice(i))
     pprint(d)
     return
-
-def main():
-    # ex1()
-    # ex2()
-    # ex3()
-    # ex4()
-    # ex5()
-    # ex6()
-    # ex7()
-    # ex8()
-    #ex9()
-    ex10()
-    return
-
-if __name__ == "__main__":
-    main()

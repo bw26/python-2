@@ -1,4 +1,4 @@
-from  student.Character import *
+from src.student.Character import *
 class Fighter(Character):
     
     def __repr__(self):
