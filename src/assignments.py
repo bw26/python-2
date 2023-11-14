@@ -2,6 +2,11 @@ from student.WordCounter import *
 from student.TaxMan import *
 from student.Calculator import *
 from student.CarCollector import *
+from student.Fighter import *
+from student.Dwarf import *
+from student.Invoice import *
+from pprint import *
+
 # define your methods here.
 # ex1() - ex10()
 def ex1():
@@ -84,14 +89,30 @@ def ex7():
     return
 
 def ex8():
-    print(CarCollector.get_data())
+    pprint(CarCollector.get_data())
 
 def ex9():
-    
-    return
+    f = Fighter(18)
+    d = Dwarf(15)
+    print(f)
+    print(d)
+    f.fight(d)
+    d.fight(f)
+    print(f)
+    print(d)
 
 def ex10():
-    
+    data = [
+        "1, 2322, 10.00, False",
+        "2, 5435, 60.30, True",
+        "3, 3433, 15.63, False",
+        "4, 8439, 12.77, False",
+        "5, 3424, 11.34, False",
+    ]
+    d = []
+    for i in data:
+        d.append(Invoice(i))
+    pprint(d)
     return
 
 def main():
@@ -102,9 +123,9 @@ def main():
     # ex5()
     # ex6()
     # ex7()
-    ex8()
-    # ex9()
-    # ex10()
+    # ex8()
+    #ex9()
+    ex10()
     return
 
 if __name__ == "__main__":
