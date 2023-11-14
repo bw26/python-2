@@ -1,6 +1,7 @@
 from student.WordCounter import *
 from student.TaxMan import *
 from student.Calculator import *
+from student.CarCollector import *
 # define your methods here.
 # ex1() - ex10()
 def ex1():
@@ -83,8 +84,7 @@ def ex7():
     return
 
 def ex8():
-    
-    return
+    print(CarCollector.get_data())
 
 def ex9():
     
@@ -101,8 +101,8 @@ def main():
     # ex4()
     # ex5()
     # ex6()
-    ex7()
-    # ex8()
+    # ex7()
+    ex8()
     # ex9()
     # ex10()
     return
